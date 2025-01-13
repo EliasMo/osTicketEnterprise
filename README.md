@@ -1,11 +1,25 @@
-# osTicketEnterprise
+# osTicket Enterprise
+
+## Prerequisites
+
+-  Windows Server 2022 (your existing AD server)
+-  XAMPP (latest version)
+-  osTicket (latest version)
+-  Active Directory configured (from previous setup)
+
+## Project Architecture 
+Finishing the enterprise infrastructure (check out hybrid ad part 1 and 2):
+
+![image](https://github.com/user-attachments/assets/49d8a80a-0217-45ad-a101-343c99760929)
+
+We will create a Xampp Web Server where the ticketing managment system will run and using mySQL for the database. We will then connect it to the AD using LDAP.
+
 
 ### Phase 1: Setup 
 - Download Xampp
 - Download osticket
-- Configure XAMPP
-- File Setup
-  
+- Configure XAMPP, php my admin
+- Database Setup
 
 ## Download XAMPP
 ![image](https://github.com/user-attachments/assets/2ce8a5be-2062-47e2-b4d6-a388266f1ee7)
@@ -20,6 +34,7 @@
 
 Head to localhost/phpmyadmin 
 - naming the database osticket
+  
 ![image](https://github.com/user-attachments/assets/a00838ea-0e5c-41d5-8566-d251aa2759fd)
 
 
@@ -97,7 +112,16 @@ Go to C:/xampp\htdocs\osTicket\setup and delete. This will stop unauthorised rec
 ![image](https://github.com/user-attachments/assets/1e7fec1d-d346-4852-9d75-0d460a032e7a)
 
 
-### Enterprise Integration 
+### Phase 2:  Active Directory Integration 
+
+### Phase 3: Help Desk Structure 
+
+### Phase 4: Email Configuration 
+
+### Phase 5: Testing and Verification 
+
+
+
 
 
 
